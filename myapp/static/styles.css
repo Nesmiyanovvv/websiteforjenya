@@ -1,0 +1,30 @@
+.jenyasex{
+    width: 100px;
+    height: 100px;
+    left: 38px;
+    top: 2px;
+}
+
+
+.basket {
+    width: 100px;
+    height: 100px;
+    left: 1771px;
+    top: 20px;
+}
+
+.authorization{
+    width: 99px;
+    height: 38px;
+    left: 1674px;
+    top: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
