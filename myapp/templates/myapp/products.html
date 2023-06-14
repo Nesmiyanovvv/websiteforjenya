@@ -53,7 +53,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/im_TC_540.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/im_TC_540.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -65,7 +65,10 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +90,10 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -109,9 +115,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
@@ -130,7 +140,10 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,9 +164,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
@@ -170,7 +187,10 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'add_to_cart' %}">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,7 +212,10 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,12 +236,13 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Добавить в корзину</a></div>
+                                <div class="text-center">
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
+                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
@@ -227,5 +251,40 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script>
+            // JavaScript-код
+            function addToCart(event) {
+                event.preventDefault(); // Отменяем переход по ссылке (по умолчанию)
+
+                // Получаем ID товара из атрибута "data-id"
+                const productId = event.target.getAttribute('data-id');
+
+                // Отправляем запрос на сервер для добавления товара в корзину
+                // Здесь вам нужно использовать соответствующий метод для отправки данных на сервер, например, fetch или AJAX
+
+                // Пример использования fetch:
+                fetch('/add-to-cart', {
+                    method: 'POST',
+                    body: JSON.stringify({id: productId}),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => {
+                        // Обрабатываем ответ от сервера, например, обновляем счетчик товаров в корзине
+                        updateCartCount(response.cartCount);
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при добавлении товара в корзину:', error);
+                    });
+            }
+
+            // Функция для обновления счетчика товаров в корзине (аналогична предыдущему ответу)
+            function updateCartCount(newCount) {
+                const cartCount = document.getElementById('cart-count');
+                cartCount.textContent = newCount.toString();
+            }
+        </script>
     </body>
 </html>

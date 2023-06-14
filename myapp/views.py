@@ -24,6 +24,10 @@ def authorization(request):
     return render(request, 'myapp/authorization.html')
 
 
+def cart(request):
+    return render(request, 'myapp/cart.html')
+
+
 class ProductDetailView(DetailView):
 
 
