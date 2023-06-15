@@ -36,7 +36,9 @@
                 </td>
                 <td data-th="Price">2000000 руб</td>
                 <td data-th="Quantity">
-                    <input type="number" class="form-control text-center" value="1">
+                    <label>
+                        <input type="number" class="form-control text-center" value="1">
+                    </label>
                 </td>
                 <td data-th="Subtotal" class="text-center">2000000 руб</td>
                 <td class="actions" data-th="">
@@ -56,7 +58,9 @@
                 </td>
                 <td data-th="Price">45000 руб</td>
                 <td data-th="Quantity">
-                    <input type="number" class="form-control text-center" value="1">
+                    <label>
+                        <input type="number" class="form-control text-center" value="1">
+                    </label>
                 </td>
                 <td data-th="Subtotal" class="text-center">45000 руб</td>
                 <td class="actions" data-th="">
@@ -75,7 +79,9 @@
                 </td>
                 <td data-th="Price">75700 руб</td>
                 <td data-th="Quantity">
-                    <input type="number" class="form-control text-center" value="1">
+                    <label>
+                        <input type="number" class="form-control text-center" value="1">
+                    </label>
                 </td>
                 <td data-th="Subtotal" class="text-center">75700 руб</td>
                 <td class="actions" data-th="">
@@ -85,15 +91,40 @@
             </tr>
             </tbody>
             <tfoot>
-            <tr class="visible-xs">
-                <td class="text-center"><strong>Total 1.99</strong></td>
-            </tr>
             <tr>
-                <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Продолжить покупки</a></td>
+                <td><a href="http://127.0.0.1:8000/products/" class="btn btn-warning"><i class="fa fa-angle-left"></i>
+                    Продолжить покупки</a></td>
                 <td colspan="2" class="hidden-xs"></td>
                 <td class="hidden-xs text-center"><strong>Итог 2120700 руб</strong></td>
-                <td><a href="#" class="btn btn-success btn-block">Оформить <i class="fa fa-angle-right"></i></a></td>
+                <td>
+                    <button class="button" onclick="showForm()">Оформление заказа</button>
+                </td>
             </tr>
+
+            <tr id="formRow" style="display: none;">
+                <td colspan="5">
+                    <div id="formContainer">
+                        <form>
+                            <label for="firstName">Имя:</label>
+                            <input type="text" id="firstName" required><br>
+
+                            <label for="lastName">Фамилия:</label>
+                            <input type="text" id="lastName" required><br>
+
+                            <label for="phoneNumber">Номер телефона:</label>
+                            <input type="text" id="phoneNumber" required><br>
+
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+
+            <script>
+                function showForm() {
+                    document.getElementById("formRow").style.display = "table-row";
+                }
+            </script>
             </tfoot>
         </table>
     </div>

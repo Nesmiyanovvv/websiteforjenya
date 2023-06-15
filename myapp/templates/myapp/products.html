@@ -18,7 +18,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="main.html">НКА</a>
+                <a class="navbar-brand" href="http://127.0.0.1:8000">НКА</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -27,7 +27,7 @@
                         <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:8000/company/">О компании</a></li>
                         <li class="nav-item"><a class="nav-link active" href="http://127.0.0.1:8000/contacts/">Контакты</a></li>
                     </ul>
-                    <form class="d-flex">
+                    <form action="http://127.0.0.1:8000/cart/" class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Корзина
@@ -66,74 +66,60 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('УЛЬТРАСТАБИЛЬНЫЙ термошкаф для микроскопов НТ-МДТ СИ')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                                        <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/Копер.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/Копер.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Копер автоматический ПМА-Ф <br> <br></h5>
-                                    <!-- Product reviews-->
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through"></span>
                                     45000 руб.
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Копер автоматический ПМА-Ф')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
+                    </div>                    <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Sale badge-->
-
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/Холодильник.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/Холодильник.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Камера тепла и холода (-60/+60 c, 150л, 18 образцов КТХ-60/50</h5>
+                                    <h5 class="fw-bolder">Камера тепла и холода (-60/+60) c, 150л, 18 образцов КТХ-60/50</h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through"></span>
                                     362000 руб.
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Камера тепла и холода (-60/+60) c, 150л, 18 образцов КТХ-60/50')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
-                    <div class="col mb-5">
+                    </div>                    <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/пресс_1.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/пресс_1.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Фильтропресс ФЛР-1 <br> <br> <br></h5>
-                                    <!-- Product reviews-->
-
                                     <!-- Product price-->
                                     170000 руб.
                                 </div>
@@ -141,41 +127,35 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Фильтропресс ФЛР-1')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
+                    </div>                    <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/термостат_1.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/термостат_1.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Лабораторный термостат Climcontrol М 30/120-250 ТС</h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through"></span>
                                     160000 руб.
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Лабораторный термостат Climcontrol М 30/120-250 ТС')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/печьь.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/печьь.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -188,48 +168,41 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Печь муфельная 2/11-G1')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                                        <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/электротигель.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/электротигель.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Электротигель ЭТМ 0,8х1,5 <br> <br> <br></h5>
-                                    <!-- Product reviews-->
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through"></span>
                                     45000 руб.
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Электротигель ЭТМ 0,8х1,5')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                                        <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="http://127.0.0.1:8000/media/сушильный_шкаф.jpg" alt="..." />
+                            <img class="card-img-top" src="http://127.0.0.1:8000/media/сушильный_шкаф.jpg" alt="..."/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Вакуумный сушильный шкаф ШСВ-11/2,5-С <br> <br></h5>
-                                    <!-- Product reviews-->
-
                                     <!-- Product price-->
                                     134500 руб.
                                 </div>
@@ -237,12 +210,13 @@
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1"
-                                       onclick="addToCart(event)">Добавить в корзину</a>
+                                    <a class="btn btn-outline-dark mt-auto" href="#" data-id="1" onclick="addToCart('Вакуумный сушильный шкаф ШСВ-11/2,5-С')">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
@@ -253,37 +227,8 @@
         <!-- Core theme JS-->
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script>
-            // JavaScript-код
-            function addToCart(event) {
-                event.preventDefault(); // Отменяем переход по ссылке (по умолчанию)
-
-                // Получаем ID товара из атрибута "data-id"
-                const productId = event.target.getAttribute('data-id');
-
-                // Отправляем запрос на сервер для добавления товара в корзину
-                // Здесь вам нужно использовать соответствующий метод для отправки данных на сервер, например, fetch или AJAX
-
-                // Пример использования fetch:
-                fetch('/add-to-cart', {
-                    method: 'POST',
-                    body: JSON.stringify({id: productId}),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                })
-                    .then(response => {
-                        // Обрабатываем ответ от сервера, например, обновляем счетчик товаров в корзине
-                        updateCartCount(response.cartCount);
-                    })
-                    .catch(error => {
-                        console.error('Ошибка при добавлении товара в корзину:', error);
-                    });
-            }
-
-            // Функция для обновления счетчика товаров в корзине (аналогична предыдущему ответу)
-            function updateCartCount(newCount) {
-                const cartCount = document.getElementById('cart-count');
-                cartCount.textContent = newCount.toString();
+            function addToCart(productName) {
+                alert("Товар '" + productName + "' добавлен в корзину");
             }
         </script>
     </body>
